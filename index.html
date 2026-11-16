@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Letter of Apology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="stage">
+  <h1>A Letter of Apology</h1>
+  <div class="env" id="env">
+    <div class="back"></div>
+    <div class="note"><i></i><i></i><i></i></div>
+    <div class="front"></div>
+    <div class="flap"></div>
+  </div>
+  <button class="btn" id="open">Open Letter</button>
+</main>
+
+<div class="reader" id="reader" aria-live="polite">
+  <div class="wrap">
+    <article class="paper" id="paper">
+      <div class="t-wrap"><h2 class="title">I’m Truly Sorry</h2></div>
+      <div id="letter"></div>
+      <div class="sig" aria-label="Signature"></div>
+      <div class="end">
+        <p>Thank you for taking the time to read this.</p>
+        <button class="btn" id="close">Close Letter</button>
+      </div>
+    </article>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
